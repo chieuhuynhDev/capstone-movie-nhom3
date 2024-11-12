@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { Progress, Tabs } from "antd";
 import { movieService } from "../../service/movieService";
-import { CustomCard } from "@tsamantanis/react-glassmorphism";
-import "@tsamantanis/react-glassmorphism/dist/index.css";
 
 const onChange = (key) => {
   console.log(key);
@@ -39,7 +37,6 @@ export default function DetailPage() {
   }, [id]);
 
   let renderDachSachRap = () => {
-    console.log("ágsdfg");
     if (!Array.isArray(danhSachRap)) return null;
     return danhSachRap?.map((heThongRap) => {
       return {
@@ -84,7 +81,7 @@ export default function DetailPage() {
         backgroundSize: "100%",
       }}
     >
-      <CustomCard
+      {/* <CustomCard
         style={{ paddingTop: 150, minHeight: "100%" }}
         effectColor="#fff" // required
         color="#fff" // default color is white
@@ -138,30 +135,8 @@ export default function DetailPage() {
           </div>
         </div>
 
-        {/* <div>
-          <div className="flex space-x-5 items-center">
-            <img className="h-96" src={detail.hinhAnh} alt="" />
-            <Progress
-              type="circle"
-              strokeWidth={10}
-              percent={detail.danhGia * 10}
-              size={120}
-              format={() => (
-                <span className="text-base font-medium text-red-600">
-                  {detail.danhGia}/10 điểm
-                </span>
-              )}
-            />
-
-            <NavLink
-              to="/booking"
-              className="text-white px-5 py-2 rounded border-2 bg-red-500"
-            >
-              Mua vé
-            </NavLink>
-          </div>
-        </div> */}
-      </CustomCard>
+        
+      </CustomCard> */}
     </div>
   );
 }
