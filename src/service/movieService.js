@@ -17,4 +17,7 @@ export let movieService = {
   layThongTinHeThonRap: () => {
     return http.get(`/api/QuanLyRap/LayThongTinHeThongRap`);
   },
+  layThongTinLichChieu: (maPhim) => {
+    return http.get(`/api/QuanLyRap/LayThongTinLichChieuPhim?MaPhim=${maPhim}`);
+  },
 };

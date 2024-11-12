@@ -6,7 +6,7 @@ import Footer from "../../component/Footer/Footer";
 
 export default function HomePage() {
   return (
-    <div>
+    <div style={{ paddingTop: "95px" }}>
       <HomeCarousel />
       <ListMovie />
       <TabMovie />
