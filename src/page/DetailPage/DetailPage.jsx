@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import { NavLink, useParams } from "react-router-dom";
 import { Progress, Tabs } from "antd";
 import { movieService } from "../../service/movieService";
