@@ -13,7 +13,7 @@ export default function LoginPage() {
       }}
       className="flex justify-center min-h-screen items-center"
     >
-      <div className="space-y-10 bg-black bg-opacity-50 w-50 rounded border-2 p-4">
+      <div className="space-y-10 bg-black bg-opacity-50 w-1/2 rounded border-2 p-4">
         <h1 className="mb-3 font-serif text-white">Đăng Nhập</h1>
         <LoginForm />
       </div>
